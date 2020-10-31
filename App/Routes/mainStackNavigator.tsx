@@ -1,14 +1,14 @@
 import React from 'react';
-
 import {createStackNavigator} from '@react-navigation/stack';
-import Home from '../Containers/Home';
+
+import MainTabNavigator from './mainTabNavigator';
 
 const MainStack = createStackNavigator();
 
 const MainStackNavigator = () => {
 	return (
-		<MainStack.Navigator>
-			<MainStack.Screen name="Home" component={Home} />
+		<MainStack.Navigator headerMode="none">
+			<MainStack.Screen name="Tabs" component={MainTabNavigator} />
 		</MainStack.Navigator>
 	);
 };
