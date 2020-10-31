@@ -1,14 +1,14 @@
 import React from 'react';
 import {Box, Text} from 'react-native-design-utility';
 
-const Home: React.FC = () => {
+const LibraryScreen = () => {
 	return (
 		<Box f={1} center>
 			<Text size={'lg'} color="green">
-				HomeScreen
+				LibraryScreen
 			</Text>
 		</Box>
 	);
 };
 
-export default Home;
+export default LibraryScreen;
